@@ -33,3 +33,10 @@ server:
   error:
     include-message: never
     include-stacktrace: never
+
+logging:
+  level:
+    root: ${LOG_LEVEL}
+    org.springframework.web: ${LOG_LEVEL}
+    org.springframework.security: TRACE
+    denzfa.cockpit: ${LOG_LEVEL}
